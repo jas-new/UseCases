@@ -9,6 +9,8 @@
        mail:
           host: mail.sandeshonline.in
           port: 587
+          username: juhi@silvereye.co
+          password: Welcome@989#
           sender: juhi@silvereye.co
           to: juhi@silvereye.co
           subject: "Test Email"
