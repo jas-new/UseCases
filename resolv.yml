@@ -1,0 +1,6 @@
+---
+- name: check DNS entries
+  hosts: localhost
+  tasks:
+     - name: check all the dns entries
+       shell: cat /etc/resolv.conf
