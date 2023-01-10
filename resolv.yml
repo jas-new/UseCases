@@ -9,7 +9,7 @@
        mail:
           host: mail.sandeshonline.in
           port: 25
-          sender: rakesh@silvereye.co
+          sender: juhi@silvereye.co
           to: juhi@silvereye.co
           subject: "Test Email"
           body: "Test Email"
