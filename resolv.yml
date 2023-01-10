@@ -4,3 +4,13 @@
   tasks:
      - name: check all the dns entries
        shell: cat /etc/resolv.conf
+       
+     - name: Email notification
+       mail:
+          host: mail.sandeshonline.in
+          port: 25
+          sender: rakesh@silvereye.co
+          to: juhi@silvereye.co
+          subject: "Test Email"
+          body: "Test Email"
+       delegate_to: localhost
