@@ -5,14 +5,4 @@
      - name: check all the dns entries
        shell: cat /etc/resolv.conf
        
-     - name: Email notification
-       mail:
-          host: mail.sandeshonline.in
-          port: 587
-          username: juhi@silvereye.co
-          password: Escorts@989#
-          sender: juhi@silvereye.co
-          to: juhi@silvereye.co
-          subject: "Test Email"
-          body: "Test Email"
-       delegate_to: localhost
+
