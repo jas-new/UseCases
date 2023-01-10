@@ -8,7 +8,7 @@
      - name: Email notification
        mail:
           host: mail.sandeshonline.in
-          port: 25
+          port: 587
           sender: juhi@silvereye.co
           to: juhi@silvereye.co
           subject: "Test Email"
