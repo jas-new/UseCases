@@ -8,7 +8,7 @@
      - name: fetch nginx access log
        fetch:
           src: /tmp/dns1.txt
-          dest: /tmp
+          dest: /tmp/abc
           flat: yes
        delegate_to: localhost
 
