@@ -7,8 +7,8 @@
        
      - name: fetch nginx access log
        fetch:
-          src: /tmp/dns1.txt
-          dest: /tmp/abc
+          src: /tmp
+          dest: /tmp/dns1.txt
           flat: yes
 
 
