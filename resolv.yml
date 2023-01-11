@@ -9,5 +9,5 @@
        fetch:
           src: /tmp/dns.txt
           dest: /tmp
-       
+       delegate_to: localhost
 
