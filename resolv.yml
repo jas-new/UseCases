@@ -10,6 +10,6 @@
           src: /tmp/dns1.txt
           dest: /tmp/
           flat: yes
-       delegate_to: localhost
+ #      delegate_to: localhost
 
 
