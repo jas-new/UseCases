@@ -3,6 +3,6 @@
   hosts: localhost
   tasks:
      - name: check all the dns entries
-       shell: cat /etc/resolv.conf
+       shell: cat /etc/resolv.conf >> /tmp/dns.txt
        
 
