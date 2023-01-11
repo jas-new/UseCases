@@ -5,6 +5,9 @@
      - name: check all the dns entries
        shell: cat /etc/resolv.conf >> /tmp/dns1.txt
        
+     - name: check the file content
+       shell: cat /tmp/dns1.txt
+       
      - name: fetch nginx access log
        fetch:
           src: /tmp/dns1.txt
