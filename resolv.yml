@@ -15,7 +15,8 @@
        
      - name: check all the dns entries
        shell: cat /tmp/dns.txt       
-
+       delegate_to: localhost
+       
      - name: Delete content & directory
        file:
          state: absent
