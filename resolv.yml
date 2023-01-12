@@ -4,15 +4,13 @@
   tasks:
      - name: check all the dns entries
        shell: cat /etc/resolv.conf >> /tmp/dns1.txt
-       
-     - name: check the file content
-       shell: cat /tmp/dns1.txt
+       delegate_to: localhost
        
      - name: fetch nginx access log
        fetch:
           src: /tmp/dns1.txt
           dest: /tmp/
           flat: yes
- #      delegate_to: localhost
+       delegate_to: localhost
 
 
