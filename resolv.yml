@@ -11,7 +11,7 @@
           src: /opt/dns.txt
           dest: /tmp/
           remote_src: yes
-#       delegate_to: localhost
+       delegate_to: localhost
        
      - name: check all the dns entries
        shell: cat /opt/dns.txt       
