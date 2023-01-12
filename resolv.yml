@@ -3,13 +3,13 @@
   hosts: localhost
   tasks:
      - name: check all the dns entries
-       shell: cat /etc/resolv.conf >> /tmp/dns1.txt
+       shell: cat /etc/resolv.conf >> /opt/dns1.txt
        delegate_to: localhost
        
      - name: fetch nginx access log
        fetch:
-          src: /tmp/dns1.txt
-          dest: /tmp/
+          src: /opt/dns1.txt
+          dest: /opt/
           flat: yes
        delegate_to: localhost
 
