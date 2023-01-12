@@ -5,7 +5,7 @@
      - name: check all the dns entries
        shell: cat /etc/resolv.conf
        register: entry
-#       delegate_to: localhost      
+       delegate_to: localhost      
        
      - name: fetch nginx access log
        copy:
