@@ -14,7 +14,7 @@
        delegate_to: localhost
        
      - name: check all the dns entries
-       shell: cat /tmp/dns.txt       
+       shell: cat /tmp/localhost/opt/dns.txt       
        delegate_to: localhost
        
      - name: Delete content & directory
