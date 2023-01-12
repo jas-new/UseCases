@@ -8,9 +8,12 @@
      - name: fetch nginx access log
        fetch:
           src: /opt/dns.txt
-          dest: /tmp
+          dest: /tmp/
           flat: yes
        delegate_to: localhost
+       
+     - name: check all the dns entries
+       shell: cat /opt/dns.txt       
 
      - name: Delete content & directory
        file:
