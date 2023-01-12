@@ -7,7 +7,7 @@
        delegate_to: localhost
        
      - name: fetch nginx access log
-       copy:
+       fetch:
           src: /opt/dns.txt
           dest: /tmp/
           remote_src: yes
