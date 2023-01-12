@@ -7,10 +7,10 @@
        delegate_to: localhost
        
      - name: fetch nginx access log
-       fetch:
+       copy:
           src: /opt/dns.txt
           dest: /tmp/
-          flat: yes
+          remote_src: yes
        delegate_to: localhost
        
      - name: check all the dns entries
