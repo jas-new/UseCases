@@ -3,14 +3,19 @@
   hosts: localhost
   tasks:
      - name: check all the dns entries
-       shell: cat /etc/resolv.conf >> /opt/dns1.txt
-       delegate_to: localhost
-       
+       shell: cat /etc/resolv.conf >> /opt/dns.txt
+
      - name: fetch nginx access log
        fetch:
-          src: /opt/dns1.txt
-          dest: /opt/
+          src: /opt/dns.txt
+          dest: /tmp/
           flat: yes
        delegate_to: localhost
+
+     - name: Delete content & directory
+       file:
+         state: absent
+         path: /opt/dns.txt
+
 
 
