@@ -9,7 +9,7 @@
      - name: fetch nginx access log
        copy:
           content: /opt/dns.txt
-          dest: /tmp/
+          dest: /tmp/dns.txt
           remote_src: yes
        delegate_to: localhost
        
