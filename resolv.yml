@@ -10,7 +10,6 @@
        fetch:
           src: /opt/dns.txt
           dest: /tmp/
-          flat: yes
           remote_src: yes
        delegate_to: localhost
        
