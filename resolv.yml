@@ -4,7 +4,6 @@
   tasks:
      - name: check all the dns entries
        shell: cat /etc/resolv.conf >> /opt/dns.txt
-       delegate_to: localhost
        
      - name: fetch nginx access log
        fetch:
